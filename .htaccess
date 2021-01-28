@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^quaestum.com.br/Manserv/$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^quaestum.com.br/Manserv/$
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]

@@ -1,0 +1,14 @@
+p.usuario-permissao{
+    text-align: center;
+    padding:20px;
+    font-size: 18px;
+}
+
+.text-center input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+}
+
+.visualizar-modal{
+    cursor: pointer;
+}

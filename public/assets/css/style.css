@@ -1,0 +1,220 @@
+#cabecalho{
+    width: 1000px;
+    padding: 5px;
+}
+
+.col-2.user{
+    padding-top: 7px;
+    padding-right: 15px;
+}
+
+.col-2.user p{
+    float:right;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+
+.material-icons.user{
+    font-size: 44px;
+    color: #ff8113;
+    float:right;
+    cursor:pointer;
+}
+
+.info-user {
+    padding: 15px;
+}
+
+/* INICIO - CONFIGS GERAIS*/
+.title-manserv{
+    width: auto;
+    position: relative;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    border-right: 1px solid #707070;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.title-manserv::after{
+    content: '';
+    background: url(../icons/ic-manserv.svg);
+    width: 89px;
+    height: 33px;
+    float: right;
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 11px;
+}
+
+/* FIM - CONFIGS GERAIS*/
+
+
+@media (min-width: 576px){
+    #infoUser .modal-dialog {
+        max-width: 500px;
+        margin-top: 3.75rem !important;
+        margin-left: 36rem !important;
+    }
+}
+
+#infoUser .modal-dialog .close {
+    margin-right: 15px;
+}
+
+.hide{
+    display: none;
+}
+
+.geral-permissoes {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.material-icons.editar{
+    cursor: pointer;
+}
+
+
+/* INCIO - ESTILO SWITCH */
+.switch__container {
+    width: 120px;
+}
+
+.switch {
+    visibility: hidden;
+    position: absolute;
+    margin-left: -9999px;
+}
+
+.switch + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.statusCondutor + label {
+    padding: 2px;
+    width: 60px;
+    height: 30px;
+    background-color: #dddddd;
+    border-radius: 60px;
+}
+.statusCondutor + label:before, .statusCondutor + label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
+}
+.statusCondutor + label:before {
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.4s;
+}
+.statusCondutor + label:after {
+    width: 30px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+.statusCondutor:checked + label:before {
+    background-color: #8ce196;
+}
+.statusCondutor:checked + label:after {
+    transform: translateX(28px);
+}
+/* FIM - ESTILO SWITCH */
+
+/*INICIO - FILTROS DE RELATÓRIOS*/
+.filtro-relatorio{
+    background: #FCF6F0;
+    width: 45px;
+    height: 40px;
+    color: #F68B1F;
+    padding: 10px;
+}
+
+.filtro-relatorio i{
+    cursor: pointer;
+}
+
+.sidebar {
+    height: 450px; 
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 201px;
+    left: 0;
+    background-color: #FCF6F0;
+    overflow-x: hidden;
+    padding-top: 16px;
+    transition: 0.5s;
+}
+  
+.sidebar a {
+    padding: 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}  
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: -8px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 161px;
+}
+
+.sidebar .container{
+    padding: 0px 17px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+/* FIM - FILTROS DE RELATÓRIOS*/
+
+.buscar i{
+    position: absolute;
+    top: 36px;
+    right: 15px;
+    color: #F68B1F;
+}
+
+.buscar input{
+    width: 91%;
+}

@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Kievit;
+    src: url("../fonts/KievitOT-Regular.otf") format("opentype");
+}
+
+body {
+    font-family: Kievit;
+    width: max-content;
+    overflow-y: hidden ! important;
+    overflow-x: hidden ! important;
+    background-color: #f8f8f8;
+    background-size: 100%;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    align-content: center;
+
+    
+   } 
+
+#loginFrame{
+    width: 420px;
+    height: 400px;
+    background-color: rgb(200, 200, 200, 0.8);
+}
+
+#cabecalhoLogin{
+    height: 100px;
+    width: 100%;
+    background-color: #ff8113;
+    padding: 40px 0px 0px 10px;
+}
+
+#loginframeContent{
+    padding: 0px 15px;
+}
+#loginFrameContainer{
+   width: 100vw;
+   margin-top: 100px;
+}
+
+
+.myinput{
+    width: 350px;
+    height: 50px;
+}
+
+#btnLogin, #spinner{
+    background-color: #ff8113;
+    font-weight: 600;
+    font-size: larger;
+    border: 0px;
+    padding: 15px;
+    height: 50px;
+}
+
+.loader {
+    border: 5px solid #ffffff;
+    border-radius: 100%;
+    border-top: 5px solid #ff8113;
+    width: 20px;
+    height: 20px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
